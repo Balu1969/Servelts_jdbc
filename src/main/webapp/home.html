@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Home Page</title>
+      <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+           
+           
+            background-image: url("https://i.postimg.cc/4Nd0DzNR/Picsart-24-03-14-20-18-16-468.jpg");
+        background-size: cover;
+        }
+ 
+        .btn-container {
+            margin-top: 335px;
+            margin-left:565px;
+            text-align: center;
+           
+        }
+ body {
+            background-color: #222;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ddd;
+            text-align: center;
+        }
+
+        .btn-container {
+            
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            margin-bottom: 7px;
+            padding: 10px 20px;
+            border: 2px solid #555;
+            border-radius: 5px;
+            background-color:#0f0;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #666;
+        }
+
+        .btn:active {
+            background-color: skyblue;
+        }
+        button{
+        width:150px;
+        height:40px;
+        }
+         .btn-balance {
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+         .btn-logout:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="btn-container">
+    <button class="btn btn-withdraw" onclick="location.href='withdraw.jsp'">Withdraw</button>
+    <button class="btn btn-balance" onclick="location.href='BalanceInquiryServlet'">Balance Enquiry</button>
+    <button class="btn btn-deposit" onclick="location.href='deposit.jsp'">Deposit</button>
+    <button class="btn btn-logout" onclick="location.href='index.html'">Logout</button>
+</div>
+
+</body>
+</html>

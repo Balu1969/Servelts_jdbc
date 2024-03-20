@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-image: url("https://i.postimg.cc/4Nd0DzNR/Picsart-24-03-14-20-18-16-468.jpg");
+        background-size: cover;
+        color:skyblue;
+      }
+      .container {
+        text-align: center;
+        width: 50px;
+        height: 20px;
+        margin-left: 525px;
+        margin-top: 355px;
+        display: block;
+
+        color: #6a6868;
+      }
+      #head {
+        margin-bottom: 5px;
+        color: #2d3030;
+        margin-left: 70px;
+        color:white;
+      }
+      .container button {
+        padding: 10px 20px; /* Add padding to the button */
+        background-color:  #0f0; /* Green background color */
+        border: none; /* Remove border */
+        color: white; /* Text color */
+        text-align: center; /* Align text to center */
+        text-decoration: none; /* Remove default underline style */
+        display: inline-block; /* Make the button inline block */
+        font-size: 16px; /* Set font size */
+        cursor: pointer; /* Add cursor pointer on hover */
+        margin-top: 10px; /* Add margin at the top */
+        margin-left:70px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3 id="head">UserLogin</h3>
+      <form id="loginForm" action="LoginServlet" method="post">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required />
+
+        <label for="pin">PIN:</label>
+        <input type="password" id="pin" name="pin" required />
+
+        <button class="btn btn-submit" type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
